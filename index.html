@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Currency Input</title>
+
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			padding-top: 30px;
+		}
+
+		.card {
+			display: flex;
+			padding: 20px;
+			border: 1px solid gray;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="card">
+		<div class="card-body">
+			<h1>Currency input</h1>
+
+			<form action="post">
+				<input type="text" id="amount1" name="amount1" data-role="currency" value="12321">
+				<input type="text" id="amount2" name="amount2" data-role="currency" value="">
+				<button type="submit">send form</button>
+			</form>
+
+		</div>
+	</div>
+
+	<script src="./currency_input.js"></script>
+</body>
+
+</html>
